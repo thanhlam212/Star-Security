@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install -g @angular/cli@17.2.2
+#RUN npm install -g @angular/cli@17.2.2
 RUN npm install
 RUN npx ngcc --properties es2023 browser module main --first-only --create-ivy-entry-points
 
