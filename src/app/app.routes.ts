@@ -1,8 +1,10 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './componets/login/login.component';
-import { HomepageComponent } from './componets/homepage/homepage.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 export const routes: Routes = [
     { path:'login', component: LoginComponent },
     { path:'homepage', component: HomepageComponent },
+    { path:'about-us', component: AboutUsComponent }
 ];

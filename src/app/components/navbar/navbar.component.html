@@ -57,15 +57,12 @@
               routerLinkActive="active"
               ariaCurrentWhenActive="page" 
               class="text-black-300 hover:bg-gray-200 hover:text-indigo-500 rounded-md px-3 py-2 text-sm font-medium" >Home</a>
-              <a href="#" class="text-black-300 hover:bg-gray-200 hover:text-indigo-500 rounded-md px-3 py-2 text-sm font-medium">Team</a>
-              <a href="#" class="text-black-300 hover:bg-gray-200 hover:text-indigo-500 rounded-md px-3 py-2 text-sm font-medium">Projects</a>
-              <a routerLink="/login" 
-              routerLinkActive="active" 
-              class="text-black-300 hover:bg-gray-200 hover:text-indigo-500 rounded-md px-3 py-2 text-sm font-medium cursor-pointer" 
+              <a 
+              routerLink="/about-us"
+              routerLinkActive="active"
               ariaCurrentWhenActive="page"
-              >
-                Login
-              </a>
+              class="text-black-300 hover:bg-gray-200 hover:text-indigo-500 rounded-md px-3 py-2 text-sm font-medium">About Us</a>
+              <a href="#" class="text-black-300 hover:bg-gray-200 hover:text-indigo-500 rounded-md px-3 py-2 text-sm font-medium">Our Business</a>
             </div>
           </div>
         </div>
@@ -77,13 +74,20 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
             </svg>
           </button>
+          <a routerLink="/login" 
+              routerLinkActive="active" 
+              class="text-black-300 hover:bg-gray-200 hover:text-indigo-500 rounded-md px-3 py-2 text-sm font-medium cursor-pointer" 
+              ariaCurrentWhenActive="page"
+              >
+                Sign In
+              </a>
   
           <!-- Profile dropdown -->
           <div class="relative ml-3">
             <div>
               <button type="button" 
-               class="relative flex rounded-full bg-white-800 text-sm focus:outline-none focus:ring-2
-               focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-500" 
+                class="relative flex rounded-full bg-white-800 text-sm focus:outline-none focus:ring-2
+                focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-500" 
                 id="user-menu-button"
                 aria-expanded="false"
                 aria-haspopup="true"
