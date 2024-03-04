@@ -63,6 +63,13 @@
                                 >Sign in</button>
                                 <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                                     Don’t have an account yet? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
+                                    <a class="border-none ml-10 hover:text-white hover:underline underline-offset-1"
+                                        routerLink="/back-home"
+                                        ariaCurrentWhenActive="page"
+                                        routerLinkActive="active"
+                                        >
+                                        Back to home page.
+                                    </a>
                                 </p>
                             </form>
                         </div>
@@ -72,3 +79,5 @@
         </div>
        
     </div>
+
+<router-outlet></router-outlet>
