@@ -11,8 +11,13 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class NavbarComponent{
   isDropdownOpen = false;
+  isNavBarVisible = true;
 
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;
+  }
+
+  public toggleSignIn() : void {
+    this.isNavBarVisible = !this.isNavBarVisible;
   }
 }

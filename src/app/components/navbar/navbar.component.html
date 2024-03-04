@@ -1,4 +1,4 @@
-<nav class="bg-white-800 border mx-auto">
+<nav *ngIf="isNavBarVisible" class="bg-white-800 border mx-auto">
     <div class="mx-auto  sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -78,6 +78,7 @@
               routerLinkActive="active" 
               class="text-black-300 hover:bg-gray-200 hover:text-indigo-500 rounded-md px-3 py-2 text-sm font-medium cursor-pointer" 
               ariaCurrentWhenActive="page"
+              (click)="toggleSignIn()"
               >
                 Sign In
               </a>
