@@ -10,5 +10,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  
+  public btnSignIn() : void {
+    
+  }
 }
