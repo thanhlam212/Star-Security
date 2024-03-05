@@ -13,6 +13,7 @@ import { HomepageComponent } from '../../page/homepage/homepage.component';
 export class NavbarComponent{
   isDropdownOpen = false;
   isNavBarVisible = true;
+  profileVisible = true;
 
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;
