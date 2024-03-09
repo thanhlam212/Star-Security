@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './clients/feature/home/home.component';
+import { AboutComponent } from './clients/feature/about/about.component';
 
 export const routes: Routes = [
     {
@@ -8,10 +9,11 @@ export const routes: Routes = [
         component: HomeComponent,
         data: { title: 'Home Page'},
     },
+    {
+        path:'about',
+        component: AboutComponent,
+        data: { title: 'about'}
+    }
 ];
 
-@NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
-})
 export class AppRoutes{}
