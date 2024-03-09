@@ -1,10 +1,13 @@
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
+import { HomeComponent } from './clients/feature/home/home.component';
 
 export const routes: Routes = [
-    // { path:'home', component: HomepageComponent },
-    
+    {
+        path: '',
+        component: HomeComponent,
+        data: { title: 'Home Page'},
+    },
 ];
 
 @NgModule({
