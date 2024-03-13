@@ -23,5 +23,9 @@ export const routes: Routes = [
         data: { title: 'login'}
     }
 ];
+@NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule],
+})
 
 export class AppRoutes{}
