@@ -11,6 +11,9 @@ import { BrowserModule } from '@angular/platform-browser';
     CommonModule,
     AppRoutes,
     BrowserModule
-  ]
+  ],
+  providers: [],
+  
 })
+
 export class AppModule { }
